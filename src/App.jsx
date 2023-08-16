@@ -4,7 +4,7 @@ import "./App.css";
 import Formstep1 from "./components/step1/Steponeform.jsx";
 import FormStep2 from "./components/step2/Steptwoform.jsx";
 import ResultPage from "./components/result/Resultpage.jsx";
-
+import { FaFileDownload } from "react-icons/fa";
 // import { saveAs } from "file-saver";
 
 const App = () => {
@@ -53,7 +53,7 @@ const App = () => {
         <>
           <ResultPage values={formData} />
           <button className="btn" onClick={handleGeneratePDF}>
-            Download as PDF
+            Download as PDF <FaFileDownload />
           </button>
         </>
       )}
