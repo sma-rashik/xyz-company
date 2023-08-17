@@ -1,5 +1,6 @@
 import React from "react";
 import "./result.css";
+import ScatterChartComponent from "./Chart1";
 
 const ResultPage = ({ values }) => {
   return (
@@ -56,6 +57,7 @@ const ResultPage = ({ values }) => {
           </tr>
         </tbody>
       </table>
+      <ScatterChartComponent />
     </div>
   );
 };
